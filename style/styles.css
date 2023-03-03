@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: hsl(221, 100%, 96%);
+  font-family: "Hanken Grotesk", sans-serif;
+  margin: 0;
+}
+
+.card {
+  max-width: 750px;
+  background-color: hsl(0, 0%, 100%);
+  margin: 0 auto;
+  overflow: hidden;
+}
+.card > * {
+  padding: 2em;
+}
+.card__stSection {
+  text-align: center;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-bottom-right-radius: 10%;
+  border-bottom-left-radius: 10%;
+  color: hsl(0, 0%, 100%);
+}
+.card__stSection > p:first-of-type {
+  font-size: 1.5em;
+  opacity: 0.8;
+  margin-top: 0;
+}
+.card__stSection > p:nth-of-type(2) {
+  font-size: 1.5em;
+  letter-spacing: 2px;
+}
+.card__stSection > p:last-of-type {
+  opacity: 0.5;
+}
+.card__result {
+  background: linear-gradient(hsl(241, 72%, 46%), hsl(256, 72%, 46%));
+  border-radius: 50%;
+  padding: 3em;
+  margin: 0 auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+}
+.card__result > p {
+  position: absolute;
+  left: 50%;
+  bottom: 20%;
+  transform: translate(-50%);
+  opacity: 0.5;
+  margin: 0;
+}
+.card__result strong {
+  font-size: 5em;
+}
+.card__ndSection > ul {
+  list-style: none;
+  padding: 0;
+}
+.card__ndSection > p:first-of-type {
+  font-size: 1.4em;
+  margin-top: 0;
+  margin-bottom: 1.6em;
+}
+.card__stat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-top: 1em;
+}
+.card__stat p {
+  color: hsla(224, 30%, 27%, 0.5);
+}
+.card__stat p > strong {
+  color: hsl(224, 30%, 27%);
+}
+.card__stat > div {
+  display: flex;
+  align-items: center;
+}
+.card__stat > div > strong {
+  margin-left: 0.5em;
+}
+.card__stat:nth-child(1) {
+  background-color: hsla(0, 100%, 67%, 0.05);
+}
+.card__stat:nth-child(1) > div {
+  color: hsl(0, 100%, 67%);
+}
+.card__stat:nth-child(2) {
+  background-color: hsla(39, 100%, 56%, 0.05);
+}
+.card__stat:nth-child(2) > div {
+  color: hsl(39, 100%, 56%);
+}
+.card__stat:nth-child(3) {
+  background-color: hsla(166, 100%, 37%, 0.05);
+}
+.card__stat:nth-child(3) > div {
+  color: hsl(166, 100%, 37%);
+}
+.card__stat:nth-child(4) {
+  background-color: hsla(234, 85%, 45%, 0.05);
+}
+.card__stat:nth-child(4) > div {
+  color: hsl(234, 85%, 45%);
+}
+.card__btn {
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  display: block;
+  width: 100%;
+  font-size: 1.3em;
+  border: none;
+  border-radius: 50px;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  .card__btn {
+    transition: background-color 300ms ease-in-out;
+  }
+  .card__btn:hover {
+    background-color: hsl(256, 72%, 46%);
+    color: hsl(0, 0%, 100%);
+  }
+}
+@media (min-width: 720px) {
+  body {
+    padding: 3em 2em;
+    display: flex;
+    align-items: center;
+  }
+  .card {
+    border-radius: 50px;
+  }
+}
+@media (min-width: 900px) {
+  .card {
+    display: flex;
+  }
+  .card__stSection {
+    border-top-right-radius: 50px;
+    flex: 0.5;
+  }
+  .card__ndSection {
+    flex: 0.5;
+  }
+}/*# sourceMappingURL=styles.css.map */
