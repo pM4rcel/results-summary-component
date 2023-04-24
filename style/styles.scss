@@ -12,10 +12,12 @@ $gradient_color4: hsl(241, 72%, 46%);
 
 $neutral_color1: hsl(0, 0%, 100%);
 $neutral_color2: hsl(221, 100%, 96%);
-$neutral_color3: hsl(241, 100%, 89%);
+$neutral_color3: hsl(0, 0%, 1%);
 $neutral_color4: hsl(224, 30%, 27%);
 
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
